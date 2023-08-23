@@ -72,6 +72,14 @@
       "options": {
         "buildTarget": "store-admin:build"
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "dependsOn": ["build"],
+      "options": {
+        "command": "netlify deploy --filter store-admin --dir dist/apps/store-admin"
+      }
     }
   },
   "tags": []
