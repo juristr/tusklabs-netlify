@@ -2,6 +2,7 @@ import styles from './authentication-user-management.module.css';
 
 /* eslint-disable-next-line */
 export interface AuthenticationUserManagementProps {}
+import { authenticationAuth } from '@tusklabs/authentication/auth';
 
 export function AuthenticationUserManagement(
   props: AuthenticationUserManagementProps
