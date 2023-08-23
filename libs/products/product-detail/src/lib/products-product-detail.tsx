@@ -3,7 +3,7 @@ import styles from './products-product-detail.module.css';
 /* eslint-disable-next-line */
 export interface ProductsProductDetailProps {}
 import { ProductsUi } from '@tusklabs/products/ui';
-import { SharedUiComponent } from '@tusklabs/shared/ui-components';
+import { SharedUiComponents } from '@tusklabs/shared/ui-components';
 
 export function ProductsProductDetail(props: ProductsProductDetailProps) {
   return (
