@@ -14,7 +14,29 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tusklabs/authentication/auth": [
+        "libs/authentication/auth/src/index.ts"
+      ],
+      "@tusklabs/authentication/user-management": [
+        "libs/authentication/user-management/src/index.ts"
+      ],
+      "@tusklabs/orders/order-detail": [
+        "libs/orders/order-detail/src/index.ts"
+      ],
+      "@tusklabs/orders/order-list": ["libs/orders/order-list/src/index.ts"],
+      "@tusklabs/orders/ui": ["libs/orders/ui/src/index.ts"],
+      "@tusklabs/products/product-detail": [
+        "libs/products/product-detail/src/index.ts"
+      ],
+      "@tusklabs/products/product-list": [
+        "libs/products/product-list/src/index.ts"
+      ],
+      "@tusklabs/products/ui": ["libs/products/ui/src/index.ts"],
+      "@tusklabs/shared/ui-components": [
+        "libs/shared/ui-components/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
