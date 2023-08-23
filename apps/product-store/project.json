@@ -72,6 +72,14 @@
       "options": {
         "buildTarget": "product-store:build"
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "dependsOn": ["build"],
+      "options": {
+        "command": "netlify deploy --filter product-store --dir dist/apps/product-store"
+      }
     }
   },
   "tags": []

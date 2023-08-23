@@ -72,6 +72,14 @@
       "options": {
         "buildTarget": "vendors:build"
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "dependsOn": ["build"],
+      "options": {
+        "command": "netlify deploy --filter vendors --dir dist/apps/vendors"
+      }
     }
   },
   "tags": []
